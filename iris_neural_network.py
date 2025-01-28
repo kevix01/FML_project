@@ -509,8 +509,8 @@ if __name__ == "__main__":
         print("Linear activation function is used, so the loss function is set to quadratic.")
 
     # Train the model
-    W1, b1, W2, b2, train_losses, val_accuracies = train(X_train, y_train, X_val, y_val, epochs=150, lr=0.1,
-                                                         batch_size=15,
+    W1, b1, W2, b2, train_losses, val_accuracies = train(X_train, y_train, X_val, y_val, epochs=200, lr=0.1,
+                                                         batch_size=32,
                                                          update_mode=update_mode, loss_type=loss_type,
                                                          use_hidden_layer=use_hidden_layer)
 
