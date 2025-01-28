@@ -16,10 +16,10 @@ This repository contains a Python implementation of a simple neural network to c
 The Iris dataset is a well-known dataset in the machine learning community, containing three classes of Iris plants: `Iris-setosa`, `Iris-versicolor`, and `Iris-virginica`. The task is to classify these three types of iris flowers based on four features: sepal length, sepal width, petal length, and petal width.
 
 This neural network implementation can perform classification tasks in two modes:
-- **Binary classification**: Classifying `Iris-setosa` vs others.
+- **Binary classification**: Classifying `Iris-setosa` vs others. This mode is used specifically to observe how the network performs with a linearly separable binary classification problem, where no non-linearity is introduced, particularly to see how well the network can converge in such a simple problem.
 - **Standard classification**: Classifying the three Iris classes (`Iris-setosa`, `Iris-versicolor`, `Iris-virginica`).
 
-The neural network uses fully connected layers, with options to include a hidden layer, and uses ReLU activation (or linear activation for regression tasks). The output layer uses either softmax (for classification) or linear activation.
+The neural network uses fully connected layers, with options to include a hidden layer, and uses ReLU activation (or linear activation). The output layer uses either softmax or linear activation.
 
 ## Requirements
 
@@ -48,10 +48,8 @@ To use this neural network, simply run the Python script and follow the interact
 1. Clone this repository:
 - `git clone https://github.com/kevix01/FML_project.git cd FML_project`
 
-
 2. Run the Python script:
 - `python iris_neural_network.py`
-
 
 3. The script will prompt you for several options, including:
    - Whether you want to perform binary or standard classification.
@@ -86,5 +84,3 @@ After training, the script will display:
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-
